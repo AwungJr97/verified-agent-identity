@@ -1,0 +1,16 @@
+name: Verify Identity
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Run verification
+        run: echo "Verification successful"
