@@ -1,9 +1,7 @@
 name: Verify Identity
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   verify:
